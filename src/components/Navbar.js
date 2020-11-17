@@ -20,7 +20,8 @@ import {
   AssignmentInd,
   Home,
   Apps,
-  ContactMail,
+  EmojiPeople,
+  Book,
 } from "@material-ui/icons";
 import avatar from "../images/Avatar.png";
 import Footer from "./Footer";
@@ -46,6 +47,16 @@ const menuItems = [
     listPath: "/",
   },
   {
+    listIcon: <EmojiPeople />,
+    listText: "About Me",
+    listPath: "/about",
+  },
+  {
+    listIcon: <Book />,
+    listText: "Skills",
+    listPath: "/skills",
+  },
+  {
     listIcon: <AssignmentInd />,
     listText: "Resume",
     listPath: "/resume",
@@ -54,11 +65,6 @@ const menuItems = [
     listIcon: <Apps />,
     listText: "Projects",
     listPath: "/projects",
-  },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contact Me",
-    listPath: "/contact",
   },
 ];
 
