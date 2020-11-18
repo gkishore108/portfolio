@@ -46,31 +46,27 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   flipInner: {
-    position: "relative",
-    display: "flex",
-    flexWrap: "wrap",
     width: "100%",
     height: "100%",
     textAlign: "center",
     transition: "transform 0.6s",
     transformStyle: "preserve-3d",
-    boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
   },
   flipFront: {
-    position: "absolute",
     width: "100%",
     height: "100%",
     backfaceVisibility: "hidden",
   },
   flipBack: {
     position: "absolute",
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
     width: "100%",
     height: "100%",
     backfaceVisibility: "hidden",
     transform: "rotateY(180deg)",
-    transition: "transform 0.6s",
-    transformStyle: "preserve-3d",
-    boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
   },
   hr: {
     border: "0",
@@ -78,14 +74,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage:
       "linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0))",
   },
-  //   secondGrid: {
-  //     [theme.breakpoints.down("xs")]: {
-  //       //   position: "relative",
-  //       //   bottom: "2%",
-  //       //   left: "1%",
-  //       width: "100%",
-  //     },
-  //   },
 }));
 
 const About = () => {
