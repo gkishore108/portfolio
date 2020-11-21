@@ -1,5 +1,5 @@
 import "./App.css";
-import Home from "./components/Home";
+import Home1 from "./components/Home1";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Home1} />
       <Route path="/about" component={About} />
       <Route path="/skills" component={Skills} />
       <Route path="/resume" component={Resume} />
